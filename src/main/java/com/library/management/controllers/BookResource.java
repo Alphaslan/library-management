@@ -1,12 +1,12 @@
-package com.library.management.Controller;
+package com.library.management.controllers;
 
-import com.library.management.DataAccessLayer.Book;
-import com.library.management.DataAccessLayer.BookRepository;
-import com.library.management.DataAccessLayer.IssuedBooksRepository;
-import com.library.management.Util.BookValidator;
+import com.library.management.entities.Book;
+import com.library.management.dao.BookRepository;
+import com.library.management.dao.IssuedBooksRepository;
+import com.library.management.util.BookValidator;
 import com.library.management.exception.BookBadRequest;
 import com.library.management.exception.BookNotFoundException;
-import com.library.management.DataAccessLayer.UserRepository;
+import com.library.management.dao.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @RestController
+@RequestMapping("/books")
 public class BookResource {
     private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
@@ -36,7 +37,7 @@ public class BookResource {
     BookValidator validator;
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/books")
+    @GetMapping()
     List<Book> findAll() {
         LOGGER.info("findAll called");
         List<Book> list = new ArrayList<Book>();
@@ -55,8 +56,8 @@ public class BookResource {
     }
 
 
-    @PostMapping("/v1/books")
-    @ResponseStatus(HttpStatus.FOUND)
+    @PostMapping()
+    @ResponseStatus(HttpStatus.CREATED)
     Book newBook(@RequestBody Book newBook) {
 
         if (validator.isValid(newBook))
@@ -69,7 +70,7 @@ public class BookResource {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping(value = "/searchBooksByAuthor")
+    @GetMapping(value = "/author")
     public List<Book> searchBooksByAuthor(@RequestParam(value = "author") String author) {
         List<Book> books = bookRepository.findAll();
         ArrayList<Book> list = new ArrayList<Book>();
@@ -80,7 +81,7 @@ public class BookResource {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping(value = "/searchBooksBySubject")
+    @GetMapping(value = "/subject")
     public List<Book> searchBooksBySubject(@RequestParam(value = "subject") String subject) {
         List<Book> books = bookRepository.findAll();
         ArrayList<Book> list = new ArrayList<Book>();

@@ -1,10 +1,9 @@
-package com.library.management.Controller;
+package com.library.management.controllers;
 
-import com.library.management.DataAccessLayer.User;
-import com.library.management.DataAccessLayer.UserRepository;
-import com.library.management.Util.UserValidator;
+import com.library.management.entities.User;
+import com.library.management.dao.UserRepository;
+import com.library.management.util.UserValidator;
 import com.library.management.exception.BadUserRequest;
-import com.library.management.exception.BookBadRequest;
 import com.library.management.exception.UserNotFoundException;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,27 +14,22 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @RestController
+@RequestMapping("/user")
 public class UserResource {
     private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     @Autowired
     private UserRepository repository;
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/v1/users")
+    @GetMapping
     List<User> findAll() {
-        return repository.findAll();
-    }
-
-    @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/v2/users")
-    List<User> findAll2() {
         return repository.findAll();
     }
 
 
     //test this
     @ApiOperation("This Api will create a new user")
-    @PostMapping("/users")
+    @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     User newUser(@RequestBody User newUser) {
         UserValidator validator = new UserValidator();
@@ -48,7 +42,7 @@ public class UserResource {
     }
 
     @ResponseStatus(HttpStatus.FOUND)
-    @GetMapping("/users/{id}")
+    @GetMapping("/{id}")
     User findOne(@PathVariable int id) {
         LOGGER.info("/users/{id} called with id " + id);
 

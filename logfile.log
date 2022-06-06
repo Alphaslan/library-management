@@ -1,0 +1,129 @@
+2022-06-06 13:50:37.574  INFO 96691 --- [main] c.l.m.LibraryManagementApplication       : Starting LibraryManagementApplication on Alpaslans-MacBook-Pro.local with PID 96691 (started by alpaslan in /Users/alpaslan/Documents/IdeaProjects/SiliconeLabs Backend Developer/library-management)
+2022-06-06 13:50:37.577  INFO 96691 --- [main] c.l.m.LibraryManagementApplication       : No active profile set, falling back to default profiles: default
+2022-06-06 13:50:38.308  INFO 96691 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-06 13:50:38.308  INFO 96691 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-06-06 13:50:38.342  INFO 96691 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.library.management.dao.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-06-06 13:50:38.344  INFO 96691 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.library.management.dao.IssuedBooksRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-06-06 13:50:38.345  INFO 96691 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.library.management.dao.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-06-06 13:50:38.345  INFO 96691 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33ms. Found 0 JDBC repository interfaces.
+2022-06-06 13:50:38.353  INFO 96691 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-06 13:50:38.353  INFO 96691 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-06 13:50:38.384  INFO 96691 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 3 JPA repository interfaces.
+2022-06-06 13:50:38.785  INFO 96691 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-06 13:50:38.791  INFO 96691 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-06 13:50:38.791  INFO 96691 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-06-06 13:50:38.850  INFO 96691 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-06 13:50:38.850  INFO 96691 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1223 ms
+2022-06-06 13:50:38.895  INFO 96691 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-06 13:50:38.991  INFO 96691 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-06 13:50:38.996  INFO 96691 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:test'
+2022-06-06 13:50:39.128  INFO 96691 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-06 13:50:39.236  INFO 96691 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-06-06 13:50:39.324  INFO 96691 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-06-06 13:50:39.400  INFO 96691 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-06 13:50:39.897  INFO 96691 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-06 13:50:39.904  INFO 96691 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-06 13:50:40.357  WARN 96691 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-06 13:50:40.455  INFO 96691 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-06 13:50:40.543  INFO 96691 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-06 13:50:40.709  INFO 96691 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-06 13:50:40.727  INFO 96691 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-06 13:50:40.756  INFO 96691 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-06 13:50:40.888  INFO 96691 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_1
+2022-06-06 13:50:40.894  INFO 96691 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_2
+2022-06-06 13:50:40.941  INFO 96691 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-06 13:50:40.944  INFO 96691 --- [main] c.l.m.LibraryManagementApplication       : Started LibraryManagementApplication in 3.802 seconds (JVM running for 4.61)
+2022-06-06 13:51:23.185  INFO 96691 --- [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-06 13:51:23.185  INFO 96691 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-06 13:51:23.192  INFO 96691 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-06-06 13:51:47.329  INFO 96691 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-06 13:51:47.331  INFO 96691 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-06 13:51:47.333  INFO 96691 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-06 13:51:47.335  INFO 96691 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-06 14:02:23.547  INFO 98278 --- [main] c.l.m.LibraryManagementApplication       : Starting LibraryManagementApplication on Alpaslans-MacBook-Pro.local with PID 98278 (started by alpaslan in /Users/alpaslan/Documents/IdeaProjects/SiliconeLabs Backend Developer/library-management)
+2022-06-06 14:02:23.549  INFO 98278 --- [main] c.l.m.LibraryManagementApplication       : No active profile set, falling back to default profiles: default
+2022-06-06 14:02:24.114  INFO 98278 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-06 14:02:24.115  INFO 98278 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-06-06 14:02:24.142  INFO 98278 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.library.management.dao.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-06-06 14:02:24.143  INFO 98278 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.library.management.dao.IssuedBooksRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-06-06 14:02:24.145  INFO 98278 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.library.management.dao.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-06-06 14:02:24.145  INFO 98278 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 JDBC repository interfaces.
+2022-06-06 14:02:24.151  INFO 98278 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-06 14:02:24.151  INFO 98278 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-06 14:02:24.175  INFO 98278 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 3 JPA repository interfaces.
+2022-06-06 14:02:24.568  INFO 98278 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-06 14:02:24.574  INFO 98278 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-06 14:02:24.574  INFO 98278 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-06-06 14:02:24.631  INFO 98278 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-06 14:02:24.631  INFO 98278 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1050 ms
+2022-06-06 14:02:24.669  INFO 98278 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-06 14:02:24.757  INFO 98278 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-06 14:02:24.761  INFO 98278 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:test'
+2022-06-06 14:02:24.857  INFO 98278 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-06 14:02:24.953  INFO 98278 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-06-06 14:02:25.038  INFO 98278 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-06-06 14:02:25.110  INFO 98278 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-06 14:02:25.595  INFO 98278 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-06 14:02:25.601  INFO 98278 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-06 14:02:26.024  WARN 98278 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-06 14:02:26.120  INFO 98278 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-06 14:02:26.202  INFO 98278 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-06 14:02:26.368  INFO 98278 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-06 14:02:26.382  INFO 98278 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-06 14:02:26.406  INFO 98278 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-06 14:02:26.524  INFO 98278 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_1
+2022-06-06 14:02:26.531  INFO 98278 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_2
+2022-06-06 14:02:26.570  INFO 98278 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-06 14:02:26.572  INFO 98278 --- [main] c.l.m.LibraryManagementApplication       : Started LibraryManagementApplication in 3.279 seconds (JVM running for 3.805)
+2022-06-06 14:02:31.669  INFO 98278 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-06 14:02:31.670  INFO 98278 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-06 14:02:31.678  INFO 98278 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2022-06-06 14:02:59.391  INFO 98278 --- [http-nio-8080-exec-10] global                                   : findAll called
+2022-06-06 14:02:59.613 ERROR 98278 --- [http-nio-8080-exec-10] global                                   : No book found
+2022-06-06 14:02:59.613 ERROR 98278 --- [http-nio-8080-exec-10] global                                   : com.library.management.exception.BookNotFoundException: Book id not found : 5
+2022-06-06 14:05:24.074  INFO 98278 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-06 14:05:24.077  INFO 98278 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-06 14:05:24.080  INFO 98278 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-06 14:05:24.082  INFO 98278 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-06 14:08:59.853  INFO 99188 --- [main] c.l.m.LibraryManagementApplication       : Starting LibraryManagementApplication on Alpaslans-MacBook-Pro.local with PID 99188 (started by alpaslan in /Users/alpaslan/Documents/IdeaProjects/SiliconeLabs Backend Developer/library-management)
+2022-06-06 14:08:59.856  INFO 99188 --- [main] c.l.m.LibraryManagementApplication       : No active profile set, falling back to default profiles: default
+2022-06-06 14:09:00.628  INFO 99188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-06 14:09:00.629  INFO 99188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-06-06 14:09:00.670  INFO 99188 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.library.management.dao.BookRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-06-06 14:09:00.672  INFO 99188 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.library.management.dao.IssuedBooksRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-06-06 14:09:00.673  INFO 99188 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.library.management.dao.UserRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-06-06 14:09:00.674  INFO 99188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 0 JDBC repository interfaces.
+2022-06-06 14:09:00.684  INFO 99188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-06 14:09:00.685  INFO 99188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-06 14:09:00.720  INFO 99188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 3 JPA repository interfaces.
+2022-06-06 14:09:01.175  INFO 99188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-06 14:09:01.182  INFO 99188 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-06 14:09:01.182  INFO 99188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2022-06-06 14:09:01.242  INFO 99188 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-06 14:09:01.243  INFO 99188 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1351 ms
+2022-06-06 14:09:01.281  INFO 99188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-06 14:09:01.363  INFO 99188 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-06 14:09:01.369  INFO 99188 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:test'
+2022-06-06 14:09:01.491  INFO 99188 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-06 14:09:01.612  INFO 99188 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2022-06-06 14:09:01.750  INFO 99188 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-06-06 14:09:01.844  INFO 99188 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-06 14:09:02.459  INFO 99188 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-06 14:09:02.466  INFO 99188 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-06 14:09:02.877  WARN 99188 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-06 14:09:02.984  INFO 99188 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-06 14:09:03.077  INFO 99188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-06 14:09:03.244  INFO 99188 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-06 14:09:03.257  INFO 99188 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-06 14:09:03.285  INFO 99188 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-06 14:09:03.398  INFO 99188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_1
+2022-06-06 14:09:03.406  INFO 99188 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findAllUsingGET_2
+2022-06-06 14:09:03.450  INFO 99188 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-06 14:09:03.452  INFO 99188 --- [main] c.l.m.LibraryManagementApplication       : Started LibraryManagementApplication in 3.898 seconds (JVM running for 4.5)
+2022-06-06 14:09:10.757  INFO 99188 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-06 14:09:10.757  INFO 99188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-06 14:09:10.764  INFO 99188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-06-06 14:10:56.962  INFO 99188 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-06-06 14:10:56.964  INFO 99188 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-06 14:10:56.966  INFO 99188 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-06 14:10:56.967  INFO 99188 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,4 +1,4 @@
-package com.library.management.DataAccessLayer;
+package com.library.management.entities;
 
 import javax.persistence.*;
 

@@ -1,7 +1,7 @@
-package com.library.management.Controller;
+package com.library.management.controllers;
 
-import com.library.management.DataAccessLayer.IssuedBooks;
-import com.library.management.DataAccessLayer.IssuedBooksRepository;
+import com.library.management.entities.IssuedBooks;
+import com.library.management.dao.IssuedBooksRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,19 +13,20 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/issued-books")
 public class IssuedBooksResource {
     private final static Logger LOGGER = LoggerFactory.getLogger(IssuedBooksResource.class);
     @Autowired
     IssuedBooksRepository repository;
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/issuedBooks")
+    @GetMapping()
     List<IssuedBooks> findAll() {
         return repository.findAll();
     }
 
 
-    @PostMapping(value = "/issueBook")
+    @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     public IssuedBooks issueBook(@RequestBody IssuedBooks issuedBooks) throws Exception {
         try {
@@ -37,8 +38,8 @@ public class IssuedBooksResource {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping(value = "/searchIssuedBooksByUser")
-    public List<IssuedBooks> searchIssuedBooksByUser(@RequestParam(value = "q") String userId) {
+    @GetMapping(value = "/user")
+    public List<IssuedBooks> searchIssuedBooksByUser(@RequestParam(value = "user") String userId) {
         LOGGER.info("searchIssuedBooksByUser called with userId " + userId);
         List<IssuedBooks> books = repository.findAll();
         ArrayList<IssuedBooks> list = new ArrayList<IssuedBooks>();

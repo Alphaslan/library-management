@@ -1,7 +1,7 @@
-package com.library.management.Util;
+package com.library.management.util;
 
 
-import com.library.management.DataAccessLayer.Book;
+import com.library.management.entities.Book;
 import org.springframework.stereotype.Component;
 
 @Component

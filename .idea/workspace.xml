@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e1f3628-76de-4b4d-a358-dfb189c32b3d" name="Changes" comment="" />
+    <list default="true" id="8e1f3628-76de-4b4d-a358-dfb189c32b3d" name="Changes" comment="library management backend java developer bootcamp project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,27 +70,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryManagementApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Library Management" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.library.management.LibraryManagementApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibraryManagementApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="LibraryManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
       <module name="library-management" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.library.management.LibraryManagementApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Library-management-master" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.library.management.LibraryManagementApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DockerspringappApplication" />
+      <item itemvalue="Spring Boot.LibraryManagementApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,7 +95,7 @@
       <workItem from="1654524384487" duration="3523000" />
       <workItem from="1654531538936" duration="236000" />
       <workItem from="1654531814276" duration="311000" />
-      <workItem from="1654532148525" duration="1657000" />
+      <workItem from="1654532148525" duration="4699000" />
     </task>
     <servers />
   </component>

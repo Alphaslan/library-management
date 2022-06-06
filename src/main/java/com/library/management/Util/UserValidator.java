@@ -1,6 +1,6 @@
-package com.library.management.Util;
+package com.library.management.util;
 
-import com.library.management.DataAccessLayer.User;
+import com.library.management.entities.User;
 import org.springframework.stereotype.Component;
 
 @Component
