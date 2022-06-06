@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="library_new@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.39">
+    <root id="1"/>
+    <database id="2" parent="1" name="Library">
+      <ObjectId>16591</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="3" parent="1" name="abc">
+      <ObjectId>16592</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="4" parent="1" name="conference_app">
+      <ObjectId>16394</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="5" parent="1" name="example2">
+      <ObjectId>16681</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="6" parent="1" name="guitars">
+      <ObjectId>16852</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="7" parent="1" name="invoice4">
+      <ObjectId>16728</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="8" parent="1" name="invoiceappdb">
+      <ObjectId>16593</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="9" parent="1" name="invoiceappdb2">
+      <ObjectId>16657</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="10" parent="1" name="invoicesappdb2">
+      <ObjectId>16645</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="11" parent="1" name="invoicesappdb3">
+      <ObjectId>16669</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="12" parent="1" name="library_new">
+      <Current>1</Current>
+      <ObjectId>16917</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="13" parent="1" name="myDb">
+      <ObjectId>16752</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="14" parent="1" name="postgres">
+      <Comment>default administrative connection database</Comment>
+      <ObjectId>13442</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="15" parent="1" name="product">
+      <ObjectId>16754</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="16" parent="1" name="product2">
+      <ObjectId>16740</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="17" parent="1" name="product3">
+      <ObjectId>16755</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="18" parent="1" name="productExample">
+      <ObjectId>16751</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="19" parent="1" name="products4">
+      <ObjectId>16853</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="20" parent="1" name="shoppingDb">
+      <ObjectId>16814</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="21" parent="1" name="todosappdb">
+      <ObjectId>16612</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <role id="22" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="23" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+    </role>
+    <role id="24" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="25" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="26" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+    </role>
+    <role id="27" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="28" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="29" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="30" parent="1" name="postgres">
+      <BypassRls>1</BypassRls>
+      <CanLogin>1</CanLogin>
+      <CreateDb>1</CreateDb>
+      <CreateRole>1</CreateRole>
+      <ObjectId>10</ObjectId>
+      <Replication>1</Replication>
+      <SuperRole>1</SuperRole>
+    </role>
+  </database-model>
+</dataSource>

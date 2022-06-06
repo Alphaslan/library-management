@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dockerspringapp" />
+        <module name="library-management" />
+        <module name="Library-management-master" />
+        <module name="Library-management" />
+        <module name="Library Management" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Library Management" options="-parameters" />
+      <module name="Library-management" options="-parameters" />
+      <module name="Library-management-master" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="dockerspringapp" options="-parameters" />
+      <module name="library-management" options="-parameters" />
+    </option>
+  </component>
+</project>
